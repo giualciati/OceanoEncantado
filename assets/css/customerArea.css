@@ -1,0 +1,36 @@
+
+
+
+.dadosPessoais{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+
+    
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 65vw;
+    height: 28vw;    
+    padding: 3em;
+
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to right, #FFE440, #3A86FF, #80AD7B) border-box;
+    border-radius: 2em;
+    border: 4px solid transparent;
+  }
+
+.link-menu{
+    margin-top: 2em;
+}
+
+.dados{
+    margin: 1em;
+}
+
+
