@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="./assets/css/orderPage.css">
 
@@ -98,38 +99,65 @@
         </section>
         
         <section class="container produtos-pedidos">
-            <h2>Produtos Pedidos</h2>
+           
             <div class="produto-container">
-                <div class="produto-imagem">
-                    <img src="/assets/img/moranguinho-1500-1.jpg" alt="Boneca Moranguinho">
+              <div class="produto-imagem">
+                
+              </div>
+              <div class="produto-detalhes endereco-box"> <!-- A classe endereco-box foi adicionada aqui -->
+                <h2>Produtos Pedidos</h2>
+                <img src="/assets/img/moranguinho-1500-1.jpg" alt="Boneca Moranguinho">
+                <p>Rara boneca ‘Moranguinho’ do ano 1980</p>
+                <div class="produto-info">
+                  <span>Preço: 358,82</span>
+                  <span>Quantidade: 1</span>
+                  <span>Subtotal: 358,82</span>
                 </div>
-                <div class="produto-detalhes">
-                    <p>Rara boneca ‘Moranguinho’ do ano 1980</p>
-                    <div class="produto-info">
-                        <span>Preço: 358,82</span>
-                        <span>Quantidade: 1</span>
-                        <span>Subtotal: 358,82</span>
-                    </div>
-                    <p>Opção de envio: <a href="#">Sedex (5 a 20 dias úteis)</a></p>
-                </div>
+                <p>Opção de envio: <a href="#">Sedex (5 a 20 dias úteis)</a></p>
+              </div>
+            </div>
+          </section>
+          
+          <section class="container metodos-pagamento">
+            <div class="metodos-pagamento-box">
+                <h2>Métodos de pagamento</h2>
+                <ul>
+                    <li>
+                        <input type="radio" id="pix" name="metodo" class="metodo-radio">
+                        <label for="pix"><i class="fab fa-cc-pix"></i> Pix</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="cartao" name="metodo" class="metodo-radio">
+                        <label for="cartao"><i class="fas fa-credit-card"></i> Cartão</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="googlepay" name="metodo" class="metodo-radio">
+                        <label for="googlepay"><i class="fab fa-google-pay"></i> Google Pay</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="boleto" name="metodo" class="metodo-radio">
+                        <label for="boleto"><i class="fas fa-file-invoice"></i> Boleto</label>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        
+        <section class="container detalhes-pagamento">
+            <div class="detalhes-pagamento-box">
+                <h2>Detalhes de Pagamento</h2>
+                <p><strong>Nome do destinatário:</strong>Antônio Batista Roberto</p>
+                <p><strong>Telefone:</strong> (11) 99999-0909</p>
+                <p><strong>CPF:</strong> 123.456.789-00</p>
+                <p><strong>Total dos produtos:</strong> 358,82</p>
+                <p><strong>Total do frete:</strong> 20,00</p>
+                <p><strong>Total a pagar:</strong> 378,82</p>
+                <p><strong>Forma de pagamento:</strong> Cartão de Crédito</p>
+                <p><strong>Endereço de entrega:</strong> R. Noberto Fraga, APTO 365, Paraíso, São Paulo, SP, 04125-090</p>
             </div>
         </section>
         
-        <section class="container metodos-pagamento">
-            <h2>Métodos de pagamento</h2>
-            <ul>
-                <li>Pix</li>
-                <li>Cartão</li>
-                <li>Google Pay</li>
-            </ul>
-        </section>
         
-        <section class="container detalhes-pagamento">
-            <h2>Detalhes de Pagamento</h2>
-            <p>Total dos produtos: 358,82</p>
-            <p>Total do frete: 20,00</p>
-            <p>Total a pagar: 378,82</p>
-        </section>
     </main>
 </body>
 </html>
